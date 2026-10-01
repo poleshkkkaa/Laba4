@@ -7,6 +7,9 @@
     <meta name="keywords" content="КПІ, FE-технології, HTML5, лабораторна робота">
 
     <title>Полєшко Поліна Вікторівна, група ІК-42, Лаб. робота №1, Варіант 14</title>
+
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
 
@@ -21,7 +24,7 @@
     </div>
 
     <h3>Мої хобі:</h3>
-    <ul>
+    <ul id="target-element-5">
         <li>Танці</li>
         <li>Малювання</li>
         <li>3Д блендер</li>
@@ -29,7 +32,7 @@
         <li>Читання</li>
     </ul>
 
-    <h3>Улюблені фільми:</h3>
+    <h3 class="target-element-6">Улюблені фільми:</h3>
     <ol>
         <li>"Три метра над рівнем неба", 2010</li>
         <li>"Джуманджи", 1995</li>
@@ -49,9 +52,20 @@
         Натисніть на зображення та дізнаєтесь більше про Львів
     </p>
 
-   <a href="https://karpaty-ua.org.ua/lviv-najkrasyvishe-misto.html" target="_blank">
-            <img src="https://karpaty-ua.org.ua/images/dostoprim/lviv_2.jpeg" alt="Львів" width="700">
-   </a>
+    <div id="image-container">
+        <a href="https://karpaty-ua.org.ua/lviv-najkrasyvishe-misto.html" target="_blank">
+            <img id="lviv-image" src="https://karpaty-ua.org.ua/images/dostoprim/lviv_2.jpeg" alt="Львів" width="700">
+        </a>
+    </div>
 
+    <div style="margin-top: 15px; margin-bottom: 30px;">
+        <button id="btn-add">Додати</button>
+        <button id="btn-zoom-in">Збільшити</button>
+        <button id="btn-zoom-out">Зменшити</button>
+        <button id="btn-delete">Видалити</button>
+    </div>
+
+   <script src="script.js"></script>
+   
 </body>
 </html>
